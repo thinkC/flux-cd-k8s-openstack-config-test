@@ -16,7 +16,7 @@ patches:
     patch: |-
       - op: replace
         path: /spec/releaseName
-        value: cluster-cambridge-bo307test
+        value: bo307-cambridge-cluster-test
 
       - op: add
         path: /spec/valuesFrom/-
