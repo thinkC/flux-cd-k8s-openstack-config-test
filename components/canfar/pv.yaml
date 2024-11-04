@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: skaha-pv
+  namespace: skaha-system
+  annotations:
+    helm.sh/resource-policy: keep
+spec:
+  accessModes:
+    - ReadWriteMany
+  volumeMode: Filesystem
+  capacity:
+    storage: 10Gi
+  storageClassName: csi-cinder
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: "/mnt/data"  

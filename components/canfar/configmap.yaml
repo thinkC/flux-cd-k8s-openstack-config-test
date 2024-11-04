@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: canfar-config
+  namespace: skaha-system
+data:
+  values.yaml: |
+    skaha:
+      namespace: skaha-system
+    skahaWorkload:
+      namespace: skaha-workload
+    # traefik:
+    #   install: true
+    ingress:
+      controller: nginx
