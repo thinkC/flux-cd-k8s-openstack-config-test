@@ -10,4 +10,4 @@ resources:
   - clusterissuer.yaml
   - pv.yaml
   - pvc.yaml
-  - posix-mapper/kustomization.yaml
+  - posix-mapper
