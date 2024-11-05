@@ -3,7 +3,7 @@ kind: Kustomization
 metadata:
   name: posix-mapper
 resources:
-  - namespace.yaml
+  # - namespace.yaml
   - helmrelease.yaml
-  - secret.yaml
+  # - secret.yaml
   - helmrepository.yaml
