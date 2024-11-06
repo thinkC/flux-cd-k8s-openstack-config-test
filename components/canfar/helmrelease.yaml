@@ -20,5 +20,7 @@ spec:
       namespace: skaha-workload
     # traefik:
     #   install: true
+    # ingress:
+    #   controller: nginx
     ingress:
-      controller: nginx
+      ingressClassName: nginx
