@@ -82,11 +82,11 @@ data:
                   loadBalancerIP: "128.232.226.7"
                 allowSnippetAnnotations: true
 
-        traefik:
-          release:
-            values:
-              ingressClass: traefik
-              controller:
-                service:
-                  loadBalancerIP: "128.232.222.103"
+        # traefik:
+        #   release:
+        #     values:
+        #       ingressClass: traefik
+        #       controller:
+        #         service:
+        #           loadBalancerIP: "128.232.222.103"
                 
