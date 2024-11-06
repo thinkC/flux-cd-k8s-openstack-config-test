@@ -85,6 +85,7 @@ data:
         traefik:
           release:
             values:
+              ingressClass: traefik
               controller:
                 service:
                   loadBalancerIP: "128.232.222.103"
