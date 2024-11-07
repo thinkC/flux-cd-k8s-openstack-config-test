@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: canfar.enno.xyz
+  - host: canfar.128-232-226-7.sslip.io
     http:
       paths:
       - path: /posix-mapper
