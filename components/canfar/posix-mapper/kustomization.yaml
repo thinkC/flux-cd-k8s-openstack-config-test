@@ -7,3 +7,4 @@ resources:
   - helmrelease.yaml
   # - secret.yaml
   - helmrepository.yaml
+  - custom-posix-mapper-ingress.yaml

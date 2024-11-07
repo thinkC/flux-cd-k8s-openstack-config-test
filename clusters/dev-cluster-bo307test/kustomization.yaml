@@ -5,7 +5,7 @@ resources:
   - ../../components/cluster
   - configmap.yaml
   - credentials-sealed.yaml
-  - nginx-ingress-class.yaml
+
 
 # for soda
   - ../../components/soda
