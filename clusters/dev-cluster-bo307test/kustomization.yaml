@@ -12,11 +12,17 @@ resources:
 # for canfar
   - ../../components/canfar
 
+#  for Blackbox exporter probe , prometheus and grafana without overlay
+
   # - ../../infra
 
 # for Blackbox exporter probe , prometheus and grafana with overlay
 
   # - ../../infra-prod/overlays/prod
+
+# for Blackbox exporter probe , prometheus and grafana with overlay
+  - ../../infra-stage/overlays/stage
+
   
 # Patch the Helm release for the cluster to update the release name
 #   This ensures we get nicely named resources in OpenStack
