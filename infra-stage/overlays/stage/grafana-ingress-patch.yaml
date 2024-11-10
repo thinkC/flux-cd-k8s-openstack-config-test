@@ -1,8 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: prometheus-ingress
+  name: grafana-ingress
   namespace: monitoring-system
 spec:
   rules:
-    - host: "prometheus.128-232-226-7.sslip.io"
+    - host: "grafana.128-232-226-7.sslip.io"
