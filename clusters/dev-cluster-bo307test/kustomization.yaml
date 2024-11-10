@@ -14,7 +14,7 @@ resources:
 
 # for Blackbox exporter probe , prometheus and grafana
 
-  - ../../infra-prod/overlays/prod
+  # - ../../infra-prod/overlays/prod
   
 # Patch the Helm release for the cluster to update the release name
 #   This ensures we get nicely named resources in OpenStack
