@@ -21,10 +21,10 @@ patches:
         path: /spec/rules/0/host
         value: grafana.128-232-226-7.sslip.io
 
-  - target:
-      kind: Probe
-      name: my-test-probe
-    patch: | 
-      - op: add
-        path: /spec/targets/staticConfig/static/-
-        value: https://google.com
+  # - target:
+  #     kind: Probe
+  #     name: my-test-probe
+  #   patch: | 
+  #     - op: add
+  #       path: /spec/targets/staticConfig/static/-
+  #       value: https://google.com
