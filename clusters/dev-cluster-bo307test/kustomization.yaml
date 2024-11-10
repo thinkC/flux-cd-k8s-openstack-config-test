@@ -12,7 +12,7 @@ resources:
 # for canfar
   - ../../components/canfar
 
-  - ../../infra
+  # - ../../infra
 
 # for Blackbox exporter probe , prometheus and grafana with overlay
 
