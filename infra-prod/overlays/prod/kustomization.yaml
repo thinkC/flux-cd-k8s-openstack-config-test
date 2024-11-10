@@ -1,0 +1,30 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../base
+
+patches:
+  - target:
+      kind: Ingress
+      name: prometheus-ingress
+    patch: |
+      - op: replace
+        path: /spec/rules/0/host
+        value: prometheus.128-232-226-7.sslip.io
+
+  - target:
+      kind: Ingress
+      name: grafana-ingress
+    patch: |
+      - op: replace
+        path: /spec/rules/0/host
+        value: grafana.128-232-226-7.sslip.io
+
+  - target:
+      kind: Probe
+      name: my-test-probe
+    patch: | 
+      - op: add
+        path: /spec/targets/staticConfig/static/-
+        value: https://google.com
