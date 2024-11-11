@@ -13,5 +13,7 @@ spec:
     storage: 10Gi
   storageClassName: csi-cinder
   persistentVolumeReclaimPolicy: Retain
-  hostPath:
-    path: "/mnt/data"  
+  csi:
+    driver:  cinder.csi.openstack.org
+    volumeHandle: 56ef4776-fed8-4fcb-a143-09cf33f51c28
+    fsType: ext4
