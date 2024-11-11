@@ -21,7 +21,7 @@ resources:
   # - ../../infra-prod/overlays/prod
 
 # for Blackbox exporter probe , prometheus and grafana with overlay part 2
-  - ../../infra-stage/overlays/stage
+  # - ../../infra-stage/overlays/stage
 
   
 # Patch the Helm release for the cluster to update the release name
